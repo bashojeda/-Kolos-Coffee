@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us — Kolos Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --gold:#9b6b12;
+      --gold-dark:#85560f;
+      --text:#222;
+      --muted:#a78a5b;
+      --max-width:1200px;
+      --page-padding:70px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Montserrat,system-ui,Arial; color:var(--text); margin:0; background:white; padding-top:80px}
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;background:white;display:flex;align-items:center;justify-content:space-between;padding:20px var(--page-padding);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .logo{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);text-decoration:none}
+    nav{display:flex;gap:24px;align-items:center}
+    nav a{color:var(--gold-dark);text-decoration:none;letter-spacing:0.08em;font-weight:600;font-size:13px}
+    .cta{padding:8px 16px;border-radius:40px;border:2px solid var(--gold);font-size:13px}
+
+    /* Hero section */
+    .hero-about{max-width:1400px;margin:60px auto;padding:0 var(--page-padding)}
+    .hero-about h1{font-family:'Playfair Display',serif;font-size:56px;color:var(--gold);margin-bottom:20px;line-height:1.1}
+    .hero-about p{font-size:18px;color:var(--muted);max-width:800px;line-height:1.8}
+
+    /* Story section */
+    .story{max-width:1200px;margin:80px auto;padding:0 var(--page-padding);display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .story img{width:100%;height:480px;object-fit:cover;border-radius:2px}
+    .story-text h2{font-size:36px;color:var(--gold);margin-bottom:20px;font-weight:600}
+    .story-text p{color:var(--muted);line-height:1.8;margin-bottom:16px}
+
+    /* Values section */
+    .values{max-width:1400px;margin:100px auto;padding:0 var(--page-padding)}
+    .values h2{text-align:center;font-size:42px;color:var(--gold);margin-bottom:60px;font-weight:600}
+    .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+    .value-item{text-align:center;padding:30px}
+    .value-item h3{color:var(--gold);font-size:24px;margin-bottom:16px}
+    .value-item p{color:var(--muted);line-height:1.6}
+
+    /* Team section */
+    .team{max-width:1200px;margin:80px auto;padding:0 var(--page-padding)}
+    .team h2{text-align:center;font-size:42px;color:var(--gold);margin-bottom:50px;font-weight:600}
+    .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+    .team-member img{width:100%;height:320px;object-fit:cover;border-radius:2px}
+    .team-member h4{color:var(--gold);margin-top:16px;font-size:20px}
+    .team-member p{color:var(--muted);font-size:14px}
+
+    footer{background:#e9e6e3;padding:36px var(--page-padding);color:var(--gold-dark);margin-top:100px}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .story{grid-template-columns:1fr}
+      .values-grid{grid-template-columns:1fr}
+      .team-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      header{padding:18px}
+      .hero-about h1{font-size:38px}
+      .team-grid{grid-template-columns:1fr}
+    }
+
+    .accessibility{position:fixed;right:18px;bottom:18px;background:#0b5ed7;color:white;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">(Kolos)Coffee</a>
+    <nav>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="location.html">LOCATION</a>
+      <a class="cta" href="#order">ORDER NOW</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-about">
+      <h1>About Kolos Coffee</h1>
+      <p>We believe that wholeness begins with a rhythm of work and rest. Our mission is to create a space where you can pause, reflect, and enjoy the simple pleasure of exceptional coffee.</p>
+    </section>
+
+    <!-- Story -->
+    <section class="story">
+      <div style="position:relative">
+        <img src="images/about.png" alt="Our story" style="position:relative;z-index:2">
+        <img src="images/unsplash-image-55nuS2rUYmQ.webp" alt="About detail" style="position:absolute;bottom:-40px;right:-30px;width:250px;height:auto;border-radius:2px;box-shadow:0 8px 24px rgba(0,0,0,.15);z-index:1">
+      </div>
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <p>Founded in 2020, Kolos Coffee was born from a passion for creating meaningful connections through exceptional coffee. We source our beans directly from sustainable farms and roast them with care to bring out their unique flavors.</p>
+        <p>Every cup we serve is a testament to our commitment to quality, community, and the art of coffee making. We believe in taking time to do things right, from bean selection to the final pour.</p>
+        <p>Our space is designed to be a sanctuary—a place where you can slow down, connect with others, and experience coffee as it was meant to be enjoyed.</p>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>Quality</h3>
+          <p>We are committed to sourcing the finest beans and crafting each drink with precision and care. Excellence is not just a goal—it's our standard.</p>
+        </div>
+        <div class="value-item">
+          <h3>Community</h3>
+          <p>Coffee is about connection. We strive to create a welcoming space where relationships flourish and everyone feels at home.</p>
+        </div>
+        <div class="value-item">
+          <h3>Sustainability</h3>
+          <p>We partner with farms that prioritize environmental stewardship and fair labor practices. The future matters to us.</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <footer>
+    <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:600">Kolos Coffee</div>
+      <div>Hours · Follow</div>
+    </div>
+  </footer>
+
+  <div class="accessibility" title="Accessibility">A</div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href')); if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}}));
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Kolos Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --gold:#9b6b12;
+      --gold-dark:#85560f;
+      --text:#222;
+      --muted:#a78a5b;
+      --max-width:1200px;
+      --page-padding:70px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Montserrat,system-ui,Arial; color:var(--text); margin:0; background:white; padding-top:80px}
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;background:white;display:flex;align-items:center;justify-content:space-between;padding:20px var(--page-padding);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .logo{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);text-decoration:none}
+    nav{display:flex;gap:24px;align-items:center}
+    nav a{color:var(--gold-dark);text-decoration:none;letter-spacing:0.08em;font-weight:600;font-size:13px}
+    .cta{padding:8px 16px;border-radius:40px;border:2px solid var(--gold);font-size:13px}
+
+    /* Hero */
+    .hero-menu{max-width:1400px;margin:60px auto;padding:0 var(--page-padding);text-align:center}
+    .hero-menu h1{font-family:'Playfair Display',serif;font-size:56px;color:var(--gold);margin-bottom:20px}
+    .hero-menu p{font-size:18px;color:var(--muted);margin-bottom:40px}
+
+    /* Menu image */
+    .menu-image{max-width:1000px;margin:0 auto 60px;padding:0 var(--page-padding)}
+    .menu-image img{width:100%;border-radius:2px;box-shadow:0 10px 40px rgba(0,0,0,.1)}
+
+    /* Menu sections */
+    .menu-content{max-width:1200px;margin:0 auto;padding:0 var(--page-padding)}
+    .menu-section{margin-bottom:80px}
+    .menu-section h2{font-size:36px;color:var(--gold);margin-bottom:30px;font-weight:600;text-align:center}
+    
+    .menu-items{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+    .menu-item-detail{border-bottom:1px solid #e0e0e0;padding-bottom:20px}
+    .item-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+    .item-header h3{color:var(--gold-dark);font-size:20px;margin:0}
+    .item-header .price{color:var(--gold);font-weight:600;font-size:18px}
+    .item-description{color:var(--muted);font-size:14px;line-height:1.6}
+
+    /* Gallery */
+    .menu-gallery{max-width:1400px;margin:80px auto;padding:0 var(--page-padding)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+    .gallery-grid img{width:100%;height:300px;object-fit:cover;border-radius:2px}
+
+    footer{background:#e9e6e3;padding:36px var(--page-padding);color:var(--gold-dark);margin-top:100px}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .menu-items{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      header{padding:18px}
+      .hero-menu h1{font-size:38px}
+      .gallery-grid{grid-template-columns:1fr}
+    }
+
+    .accessibility{position:fixed;right:18px;bottom:18px;background:#0b5ed7;color:white;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">(Kolos)Coffee</a>
+    <nav>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="location.html">LOCATION</a>
+      <a class="cta" href="#order">ORDER NOW</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-menu">
+      <h1>Our Menu</h1>
+      <p>Carefully crafted beverages and treats to fuel your daily rhythm</p>
+    </section>
+
+    
+
+    <!-- Menu Content -->
+    <div class="menu-content">
+      <!-- Coffee -->
+      <section class="menu-section">
+        <h2>Signature Coffee</h2>
+        <div class="menu-items">
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Kolos Latte</h3>
+              <span class="price">$5.50</span>
+            </div>
+            <p class="item-description">Our signature latte with house-roasted espresso, steamed milk, and a hint of vanilla. A perfect balance of bold and smooth.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Short Cream Latte</h3>
+              <span class="price">$4.75</span>
+            </div>
+            <p class="item-description">Rich espresso topped with velvety cream. Small but mighty, this drink packs intense flavor in every sip.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Espresso Con Panna</h3>
+              <span class="price">$4.25</span>
+            </div>
+            <p class="item-description">Classic espresso topped with fresh whipped cream. Simple, elegant, and delicious.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Espresso Tonic</h3>
+              <span class="price">$5.00</span>
+            </div>
+            <p class="item-description">Refreshing combination of espresso and tonic water over ice. Perfect for warm days.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Cappuccino</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p class="item-description">Traditional cappuccino with equal parts espresso, steamed milk, and foam.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Cold Brew</h3>
+              <span class="price">$4.75</span>
+            </div>
+            <p class="item-description">Smooth, slow-steeped cold brew coffee. Less acidic, more caffeinated.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pastries -->
+      <section class="menu-section">
+        <h2>Pastries & Treats</h2>
+        <div class="menu-items">
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Croissant</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p class="item-description">Buttery, flaky croissant baked fresh daily. Available plain or with chocolate.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Almond Danish</h3>
+              <span class="price">$4.25</span>
+            </div>
+            <p class="item-description">Sweet almond paste wrapped in layers of pastry, topped with sliced almonds.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Banana Bread</h3>
+              <span class="price">$3.75</span>
+            </div>
+            <p class="item-description">Moist, homemade banana bread with walnuts. Pairs perfectly with coffee.</p>
+          </div>
+          <div class="menu-item-detail">
+            <div class="item-header">
+              <h3>Scone</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p class="item-description">Classic scone, rotating flavors weekly. Ask about today's selection.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+   
+
+  </main>
+
+  <footer>
+    <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:600">Kolos Coffee</div>
+      <div>Hours · Follow</div>
+    </div>
+  </footer>
+
+  <div class="accessibility" title="Accessibility">A</div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href')); if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}}));
+  </script>
+</body>
+</html>
